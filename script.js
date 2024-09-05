@@ -119,37 +119,60 @@
 //         break;
 // }
 
-let day = "Monday"; // Change this value to test different days
-let timeOfDay = "afternoon"; // Change this value to test different times
+// let day = "Monday"; // Change this value to test different days
+// let timeOfDay = "afternoon"; // Change this value to test different times
 
-switch (day) {
-    case "Saturday":
-    case "Sunday":
-        console.log(day + " is a weekend.");
-        break;
-    case "Monday":
-    case "Tuesday":
-    case "Wednesday":
-    case "Thursday":
-    case "Friday":
-        console.log(day + " is a weekday.");
-        break;
-    default:
-        console.log("Invalid day.");
-        break;
+// switch (day) {
+//     case "Saturday":
+//     case "Sunday":
+//         console.log(day + " is a weekend.");
+//         break;
+//     case "Monday":
+//     case "Tuesday":
+//     case "Wednesday":
+//     case "Thursday":
+//     case "Friday":
+//         console.log(day + " is a weekday.");
+//         break;
+//     default:
+//         console.log("Invalid day.");
+//         break;
+// }
+
+// switch (timeOfDay) {
+//     case "morning":
+//         console.log("Good morning!");
+//         break;
+//     case "afternoon":
+//         console.log("Good afternoon!");
+//         break;
+//     case "evening":
+//         console.log("Good evening!");
+//         break;
+//     default:
+//         console.log("Invalid time of day.");
+//         break;
+// }
+
+//Day 5
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
 }
 
-switch (timeOfDay) {
-    case "morning":
-        console.log("Good morning!");
-        break;
-    case "afternoon":
-        console.log("Good afternoon!");
-        break;
-    case "evening":
-        console.log("Good evening!");
-        break;
-    default:
-        console.log("Invalid time of day.");
-        break;
+let i = 10;
+while (i >= 1) {
+    console.log(i);
+    i--;
+}
+
+let num = 2;
+do {
+    console.log(num);
+    num += 2;
+} while (num <= 10);
+
+const colors = ['red', 'blue', 'green', 'yellow', 'purple'];
+
+for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
 }
