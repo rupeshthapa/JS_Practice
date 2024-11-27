@@ -1,0 +1,11 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+body{
+    background-color: azure;
+}
+
+li{
+    text-decoration: none;
+}
