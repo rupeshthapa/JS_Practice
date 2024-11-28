@@ -1,11 +1,17 @@
 *{
-    margin: auto;
-    padding: auto;
+   
 }
 body{
     background-color: azure;
 }
-
-li{
+nav{
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
     text-decoration: none;
+    margin: 50px;
+    color: black;
 }
