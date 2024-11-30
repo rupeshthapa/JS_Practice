@@ -1,17 +1,117 @@
+/* Basic Reset */
 *{
-   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
-    background-color: azure;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
 }
-nav{
-    text-align: center;
+/* Header */
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    z-index: 10;
+    top: 0;
 }
-nav ul li{
-    display: inline;
+header h1{
+    margin: 0;
 }
-nav ul li a{
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul li{
+    margin: -40px 10px;
+}
+header nav ul li a{
+    color: #fff;
     text-decoration: none;
-    margin: 50px;
-    color: black;
+    padding: 5px 10px;
+}
+header nav ul li a:hover{
+    background-color: #555;
+    border-radius: 5px;
+}
+/* Hero section */
+#home{
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+#home h2{
+    font-size: 2rem;
+}
+#home p{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+/* Categories section*/
+#categories{
+    text-align: center;
+    padding: 20px;
+}
+#categories h3{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+#categories ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#categories ul li{
+    padding: 10px 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+#categories ul li:hover{
+    background-color: #c0c0c0;
+    cursor: pointer;
+}
+/* Prdoucts Section */
+#products{
+    padding: 20px;
+}
+#products h3{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#products div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#products article{
+    background-color: #fff;
+    border: 1 solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 200;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#products article h4{
+    font-size: 1.4rem;
+}
+#products article p{
+    font-size: 1rem;
+    color: #666;
+}
+/* Footer Section */
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
 }
