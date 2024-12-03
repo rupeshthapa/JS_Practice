@@ -68,6 +68,23 @@
         <footer>
             <p>© 2024 ShopEasy. All rights reserved.</p>
         </footer>
-        <script src="script.js"></script>
+        <script src="script.js">
+            // Select the products section
+const productsSection = document.querySelector("#products div");
+
+// Render products dynamically
+products.forEach((product) => {
+  // Create product card
+  const productCard = document.createElement("article");
+  productCard.innerHTML = `
+    <h4>${product.name}</h4>
+    <p>${product.description}</p>
+    <p>Price: $${product.price}</p>
+    <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
+  `;
+  productsSection.appendChild(productCard);
+});
+
+        </script>
     </body>
 </html>

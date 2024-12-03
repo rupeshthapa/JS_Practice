@@ -18,25 +18,27 @@ if (hours < 12) {
 heroSection.appendChild(greeting);
 
 
-
-
-
-
-
-
-
 // Add to Cart Functionality
-let cartCount = 0; // Initialize cart count to 0
-const cartCountDisplay = document.querySelector("#cart-count"); // Selects the <span> for cart count
+let cartCount = 0; // Initialize cart count
+const cartCountDisplay = document.querySelector("#cart-count"); // Select cart counter
 
-// Select all "Add to Cart" buttons
-const addToCartButtons = document.querySelectorAll(".add-to-cart");
-
-// Add click event to each button
-addToCartButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    cartCount++; // Increase cart count by 1
-    cartCountDisplay.textContent = cartCount; // Update the cart count in the UI
-    alert("Item added to cart!"); // Show a popup message
-  });
+// Event delegation for dynamically added buttons
+productsSection.addEventListener("click", (e) => {
+  if (e.target.classList.contains("add-to-cart")) {
+    cartCount++; // Increment cart count
+    cartCountDisplay.textContent = cartCount; // Update the cart display
+    const productId = e.target.getAttribute("data-id"); // Get the product ID
+    const product = products.find((item) => item.id === parseInt(productId)); // Find product
+    alert(`Added to cart: ${product.name}`); // Notify user
+  }
 });
+
+
+
+// Array of products
+const products = [
+  { id: 1, name: "Smartphone", price: 699, description: "Latest model with high-end features." },
+  { id: 2, name: "Laptop", price: 999, description: "Lightweight and powerful." },
+  { id: 3, name: "Headphones", price: 199, description: "Noise-cancelling, over-ear headphones." },
+  { id: 4, name: "Smartwatch", price: 249, description: "Track your health and fitness." }
+];
